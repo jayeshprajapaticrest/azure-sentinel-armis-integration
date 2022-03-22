@@ -20,35 +20,35 @@
             "type": "securestring",
             "defaultValue": "<ArmisSecretKey>"
         },
-        "ArmisURL":{
+        "ArmisURL": {
             "type": "string",
             "defaultValue": "<ArmisURL>"
         },
-        "ArmisDeviceTableName":{
+        "ArmisDeviceTableName": {
             "type": "string",
             "defaultValue": "<ArmisDeviceTableName>"
         },
-        "ArmisAlertsTableName":{
+        "ArmisAlertsTableName": {
             "type": "string",
             "defaultValue": "<ArmisAlertsTableName>"
         },
-        "ArmisActivitiesTableName":{
+        "ArmisActivitiesTableName": {
             "type": "string",
             "defaultValue": "<ArmisActivitiesTableName>"
         },
-        "Interval":{
+        "Interval": {
             "type": "string",
             "defaultValue": "0 * * * *"
         },
-        "StartTime":{
+        "StartTime": {
             "type": "string",
             "defaultValue": "07/01/2021 00:00:00"
         }
     },
     "variables": {
         "FunctionName": "[concat(toLower(parameters('FunctionName')), uniqueString(resourceGroup().id))]",
-         "StorageSuffix": "[environment().suffixes.storage]",
-         "LogAnaltyicsUri": "[replace(environment().portal, 'https://portal', concat('https://', toLower(parameters('WorkspaceID')), '.ods.opinsights'))]"
+        "StorageSuffix": "[environment().suffixes.storage]",
+        "LogAnaltyicsUri": "[replace(environment().portal, 'https://portal', concat('https://', toLower(parameters('WorkspaceID')), '.ods.opinsights'))]"
     },
     "resources": [
         {
@@ -179,7 +179,7 @@
                         "ArmisActivitiesTableName": "[parameters('ArmisActivitiesTableName')]",
                         "Interval": "[parameters('Interval')]",
                         "StartTime": "[parameters('StartTime')]",
-                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/jayeshprajapaticrest/azure-sentinel-armis-integration/blob/main/ArmisConnector.zip?raw=true"
+                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/jayeshprajapaticrest/azure-sentinel-armis-integration/blob/master/ArmisConnector.zip?raw=true"
                     }
                 }
             ]
