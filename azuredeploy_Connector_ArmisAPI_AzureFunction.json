@@ -179,7 +179,7 @@
                         "ArmisActivitiesTableName": "[parameters('ArmisActivitiesTableName')]",
                         "Interval": "[parameters('Interval')]",
                         "StartTime": "[parameters('StartTime')]",
-                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/jayeshprajapaticrest/azure-sentinel-armis-integration/blob/master/ArmisConnector.zip?raw=true"
+                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/jayeshprajapaticrest/azure-sentinel-armis-integration/blob/main/ArmisConnector.zip?raw=true"
                     }
                 }
             ]
