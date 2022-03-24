@@ -35,14 +35,6 @@
         "ArmisActivitiesTableName": {
             "type": "string",
             "defaultValue": "<ArmisActivitiesTableName>"
-        },
-        "Interval": {
-            "type": "string",
-            "defaultValue": "0 * * * *"
-        },
-        "StartTime": {
-            "type": "string",
-            "defaultValue": "07/01/2021 00:00:00"
         }
     },
     "variables": {
@@ -176,9 +168,7 @@
                         "ArmisURL": "[parameters('ArmisURL')]",
                         "ArmisDeviceTableName": "[parameters('ArmisDeviceTableName')]",
                         "ArmisAlertsTableName": "[parameters('ArmisAlertsTableName')]",
-                        "ArmisActivitiesTableName": "[parameters('ArmisActivitiesTableName')]",
-                        "Interval": "[parameters('Interval')]",
-                        "StartTime": "[parameters('StartTime')]",
+                        "ArmisActivitiesTableName": "[parameters('ArmisActivitiesTableName')]"
                         "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/jayeshprajapaticrest/azure-sentinel-armis-integration/blob/main/ArmisConnector.zip?raw=true"
                     }
                 }
