@@ -168,7 +168,7 @@
                         "ArmisURL": "[parameters('ArmisURL')]",
                         "ArmisDeviceTableName": "[parameters('ArmisDeviceTableName')]",
                         "ArmisAlertsTableName": "[parameters('ArmisAlertsTableName')]",
-                        "ArmisActivitiesTableName": "[parameters('ArmisActivitiesTableName')]"
+                        "ArmisActivitiesTableName": "[parameters('ArmisActivitiesTableName')]",
                         "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/jayeshprajapaticrest/azure-sentinel-armis-integration/blob/main/ArmisConnector.zip?raw=true"
                     }
                 }
