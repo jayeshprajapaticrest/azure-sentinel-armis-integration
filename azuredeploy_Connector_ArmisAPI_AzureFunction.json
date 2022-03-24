@@ -169,7 +169,7 @@
                         "ArmisDeviceTableName": "[parameters('ArmisDeviceTableName')]",
                         "ArmisAlertsTableName": "[parameters('ArmisAlertsTableName')]",
                         "ArmisActivitiesTableName": "[parameters('ArmisActivitiesTableName')]",
-                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/AkhilVKhatode/azure-sentinel-tenable-io-integration/blob/master/TenableConnector/TenableSentinelConn.zip?raw=true"
+                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/jayeshprajapaticrest/azure-sentinel-armis-integration/blob/main/ArmisConnector.zip?raw=true"
                     }
                 }
             ]
