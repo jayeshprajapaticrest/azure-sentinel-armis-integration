@@ -3,9 +3,9 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "FunctionName": {
-            "defaultValue": "ArmisActivity",
+            "defaultValue": "Armis",
             "minLength": 1,
-            "maxLength": 13,
+            "maxLength": 11,
             "type": "string"
         },
         "WorkspaceID": {
@@ -23,6 +23,14 @@
         "ArmisURL":{
             "type": "string",
             "defaultValue": "<ArmisURL>"
+        },
+        "ArmisDeviceTableName":{
+            "type": "string",
+            "defaultValue": "<ArmisDeviceTableName>"
+        },
+        "ArmisAlertsTableName":{
+            "type": "string",
+            "defaultValue": "<ArmisAlertsTableName>"
         },
         "ArmisActivitiesTableName":{
             "type": "string",
@@ -158,8 +166,10 @@
                         "WorkspaceKey": "[parameters('WorkspaceKey')]",
                         "ArmisSecretKey": "[parameters('ArmisSecretKey')]",
                         "ArmisURL": "[parameters('ArmisURL')]",
+                        "ArmisDeviceTableName": "[parameters('ArmisDeviceTableName')]",
+                        "ArmisAlertsTableName": "[parameters('ArmisAlertsTableName')]",
                         "ArmisActivitiesTableName": "[parameters('ArmisActivitiesTableName')]",
-                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/jayeshprajapaticrest/armis-test/blob/main/ArmisActivityTrigger.zip?raw=true"
+                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/jayeshprajapaticrest/azure-sentinel-armis-integration/blob/main/ArmisConnector.zip?raw=true"
                     }
                 }
             ]
